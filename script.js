@@ -5,6 +5,9 @@
     nd sets the respective class properties to these values.*/
     /*b) The constructor for the class Movie will set the 
     class property rating to "PG" as default when no rating is provided.*/
+    /*c) Write a method getPG, which takes an array of base type Movie as its argument, 
+    and returns a new array of only those movies in the input array with a rating of "PG". 
+    You may assume the input array is full of Movie instances. The returned array need not be full.*/
 //Solution:
 class Movie{
     
@@ -29,76 +32,8 @@ var arr = [m1,m2,m3,m4,m5,m6];
 var pgMovies = Movie.getPG(arr);
 console.log(pgMovies);
 
-/*1.d) Write a piece of code that creates an instance of the class Movie with the 
-title “Casino Royale”, the studio “Eon Productions”, and the rating “PG­13”*/
-//Solution:
-/*class Movie{
-    constructor(title, studio,rating){
-        this.title=title;
-        this.studio=studio;
-        this.rating=rating;
-    }
-    toString() {
-        return `Title: "${this.title}" Studio: "${this.studio}" Rating: "${this.rating}"`;
-    }
-}
-let mv=new Movie("Casino Royale","Eon Productions","PG13");
-console.log(mv.toString());*/
 
-//2. https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
-//Solution:
 
-/*class Circle{
-    constructor(radius,color){
-        this.radius=radius;
-        this.color=color;
-    }
-    getRadius(){
-        return `Radius: ${this.radius}`
-    }
-    getColor(){
-        return `Color: ${this.color}`        
-    }
-    getArea(){
-        return `Area: ${(Math.PI*(this.radius*this.radius)).toFixed(2)}`
-    }
-    getCircumference(){
-        return `Circumference: ${(2*Math.PI*this.radius).toFixed(2)}`
-    }
-}
-let c1=new Circle(4,"Red")
-console.log(c1.getRadius());
-console.log(c1.getColor());
-console.log(c1.getArea());
-console.log(c1.getCircumference());*/
 
-//3. Write a “person” class to hold all the details.
-//Solution:
-/*class Person{
-    constructor(name,age,gender,nationality,qualification,job,address){
-        this.name=name;
-        this.age=age;
-        this.gender=gender;
-        this.nationality=nationality;
-        this.qualification=qualification;
-        this.job=job;
-        this.address=address;
-    }
-}
-let p1=new Person("Sibina",25,"Female","Indian","M.A. English Literature","Unemployed","Mylacode, Alencode Post, K.K Dist., 629802")
-console.log(p1);*/
 
-//4.Write a class to calculate the Uber price.
-//Solution:
-/*class Uber{
-    constructor (name,distance){
-        this.name=name;
-        this.distance=distance;
-    }
-    getPrice(){
-        return `Distance traveled: ${this.distance}km.
-Your total fare is ${this.distance*18}`
-    }
-}
-let p1 = new Uber("Anand",4.5);
-console.log(p1.getPrice());*/
+
